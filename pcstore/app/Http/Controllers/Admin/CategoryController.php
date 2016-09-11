@@ -75,7 +75,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $id_category = Input::get($id=5);
+        $id_category = Input::get('category');
         $category = Category::find($id_category);
         dd($category);
         $data = array(

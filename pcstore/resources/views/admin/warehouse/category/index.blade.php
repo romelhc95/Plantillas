@@ -27,7 +27,7 @@
                     <td class="actions">
                         <div class="action-buttons">
                             <a class="table-actions" href="#"><i class="icon-eye-open"></i></a>
-                            <a class="table-actions" href="#editcategory" data-toggle="modal"><i class="icon-pencil"></i></a>
+                            <a class="table-actions" href="#btn-edit" data-toggle="modal"><i class="icon-pencil"></i></a>
                             <a class="table-actions btn-delete" href="#!"><i class="icon-trash"></i></a>
                         </div>
                     </td>

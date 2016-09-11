@@ -10,7 +10,7 @@
                 </h4>
             </div>
             {!! Form::open(['route'=>'category.store', 'method'=>'POST', 'class'=>'form-group']) !!}
-            <div class="modal-body">
+            <div class="modal-body"> 
                 <h4><span>{!! Form::label('name', 'Nombre:', ['class'=>'control-label']) !!}</span></h4>
                 {!! Form::text('description', null, ['class'=>'form-control']) !!}
             </div>

@@ -95,13 +95,13 @@
                                 <a href="{!! URL::to('admin/almacen/category') !!}">Categoria</a>
                             </li>
                             <li>
-                                <a href="#">Marca</a>
+                                <a href="{!! URL::to('/admin/almacen/brand') !!}">Marca</a>
                             </li>
                             <li>
-                                <a href="#">Modelo</a>
+                                <a href="{!! URL::to('/admin/almacen/model') !!}">Modelo</a>
                             </li>
                             <li>
-                                <a href="#">Productos</a>
+                                <a href="{!! URL::to('/admin/almacen/product') !!}">Productos</a>
                             </li>
                         </ul>
                     </li>
@@ -234,5 +234,6 @@
     {!! Html::script('javascripts/jquery.sparkline.min.js') !!}
     {!! Html::script('javascripts/main.js') !!}
     {!! Html::script('javascripts/respond.js') !!}
-    @yield('scripts')
+    @section('scripts')
+    @show
 </html>

@@ -21,11 +21,11 @@ class CreateDetailSalesTable extends Migration
             $table->foreign('product_id')->references('id')->on('products');
             $table->integer('customer_id')->unsigned();
             $table->foreign('customer_id')->references('id')->on('customers');
-            $table->double('price', 15, 8);
-            $table->double('import', 15, 8);
+            $table->double('precio', 15, 8);
+            $table->double('importe', 15, 8);
             $table->string('price_type', 30);
             $table->double('recibed_mount', 15, 8);
-            $table->double('quantity', 15, 8);
+            $table->double('cantidad', 15, 8);
             $table->timestamps();
         });
     }

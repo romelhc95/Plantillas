@@ -25,6 +25,8 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function() {
     Route::group(['prefix'=>'almacen'], function () {
 
         Route::resource('category', 'CategoryController');
+        Route::resource('brand', 'BrandController');
+        Route::get('brands', 'BrandController@listing');
 
 
 
@@ -32,12 +34,6 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function() {
 
 
 
-
-
-        
-        Route::get('marca', function () {
-        return view('admin.warehouse.brand');
-        }); 
         
         Route::get('modelo', function () {
         return view('admin.warehouse.model');
